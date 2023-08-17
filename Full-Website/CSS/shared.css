@@ -11,7 +11,7 @@ html {
 body {
     font-size: 14px;
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: MedievalSharp;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
@@ -22,8 +22,8 @@ nav {
     display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+h1, h2, h3, h4, h5, h6, li {
+    font-family: MedievalSharp;
 }
 
 h1 {
@@ -154,11 +154,12 @@ section {
     text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
     font-variant: small-caps;
     color: #fff;
+    text-shadow: #000 5px;
     letter-spacing: 5pt;
     word-spacing: 21pt;
     font-size: 4.5em;
     text-align: left;
-    font-family: impact, sans-serif;
+    font-family: MedievalSharp;
     line-height: 2;
     font-weight: 900;
     border: 5px double #fff;
@@ -233,6 +234,8 @@ section {
 .contact p {
     color: #13161B;
     width: 50%;
+    font-family: MedievalSharp;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -266,7 +269,7 @@ section {
     border-radius: 7px;
     background: #13161B;
     box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
-    font-family: 'Raleway', sans-serif;
+    font-family: MedievalSharp;
 }
 
 .contact input[type="text"]:hover {
@@ -285,7 +288,7 @@ section {
     line-height: 5px;
     color: #000;
     cursor: pointer;
-    font-family: 'Raleway', sans-serif;
+    font-family: MedievalSharp;
     font-weight: 600;
     position: relative;
     display: inline;
@@ -304,7 +307,7 @@ section {
     font-weight: 900;
     outline: none;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: MedievalSharp;
     margin: 0px 3%;
     width: 25%;
     font-size: 18px;
