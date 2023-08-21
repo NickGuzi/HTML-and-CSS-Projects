@@ -1,2 +1,10 @@
 # HTML and CSS Projects
- Repository for HTML and CSS projects completed at the Tech Academy
+ This is a display of sample websites I made using HTML and CSS
+
+## Projects
+- [Arms & Armor Site](#arms-&-armor-site)
+-[Wine Importer Site](#wine-importer-site)
+
+### Arms & Armor Site
+
+### Wine Importer Site
