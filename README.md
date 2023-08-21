@@ -1,5 +1,5 @@
 # HTML and CSS Projects
- This is a display of sample websites I made using HTML and CSS during my time attending the Tech Academy
+ This is a display of sample websites and practice files I made using HTML and CSS during my time attending the Tech Academy
 
 ## Projects
 - [Arms and Armor Site](#arms-and-armor-site)
