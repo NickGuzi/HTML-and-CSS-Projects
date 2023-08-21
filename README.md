@@ -5,7 +5,7 @@
 - [Arms and Armor Site](#arms-and-armor-site)
 - [Wine Importer Site](#wine-importer-site)
 - [Basic HTML and JavaScript](#basic-html-and-javascript)
-- [Basic HTML and CSS](basic-html-and-css)
+- [Basic HTML and CSS](#basic-html-and-css)
 
 ### Arms and Armor Site
 This page is an example of a home page for a website that informs the public on different armor styles/types throughout history in Europe. It's styled using CSS and contains a navbar, image and video containers, and a form. 
