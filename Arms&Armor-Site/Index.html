@@ -3,8 +3,12 @@
 	<head>
 		<title>Arms and Armor</title>
 		<meta charset="utf-8">
+		<!--CSS-->
 		<link rel="stylesheet" href="./CSS/shared.css">
 		<link rel="stylesheet" href="./CSS/animations.css">
+		<!--JavaScript-->
+		<script src="./JS/main.js" defer></script>
+		<!--Favicon-->
 		<link rel="icon" type="image/x-icon" href="./Images/Icons/favicon.ico">
 		<link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
 	</head>
@@ -42,7 +46,7 @@
 					<!--PHOTO-CONTAINER 1-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src=".\Images\Thumb\thumbnail_2.png" alt="Sorry, image could not be displayed.">
+							<img src=".\Images\Thumb\thumbnail_2.png" onclick="openModal();currentSlide(1)" alt="Sorry, image could not be displayed.">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Here is an example of the armor an early medieval Anglo-Saxon warrior wore.</p>
@@ -54,7 +58,7 @@
 					<!--PHOTO-CONTAINER 2-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src=".\Images\Thumb\thumbnail_3.png" alt="Sorry, image could not be displayed.">
+							<img src=".\Images\Thumb\thumbnail_3.png" onclick="openModal();currentSlide(2)" alt="Sorry, image could not be displayed.">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>In this picture you see a Norman Knight's attire from the 11th century.</p>
@@ -66,7 +70,7 @@
 					<!--PHOTO-CONTAINER 3-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src=".\Images\Thumb\thumbnail_4.png" alt="Sorry, image could not be displayed.">
+							<img src=".\Images\Thumb\thumbnail_4.png" onclick="openModal();currentSlide(3)" alt="Sorry, image could not be displayed.">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Here we have the standard "crusader" attire of a Western European Knight in the 13th centruy.</p>
@@ -78,7 +82,7 @@
 					<!--PHOTO-CONTAINER 4-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src=".\Images\Thumb\thumbnail_5.png" alt="Sorry, image could not be displayed.">
+							<img src=".\Images\Thumb\thumbnail_5.png" onclick="openModal();currentSlide(4)" alt="Sorry, image could not be displayed.">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Pictured here are three different Italian armor styles from the 14th century.</p>
@@ -90,7 +94,7 @@
 					<!--PHOTO-CONTAINER 5-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src=".\Images\Thumb\thumbnail_6.png" alt="Sorry, image could not be displayed.">
+							<img src=".\Images\Thumb\thumbnail_6.png" onclick="openModal();currentSlide(5)" alt="Sorry, image could not be displayed.">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Here is an example of an unmounted German Knight's armor from the 15th century. </p>
@@ -102,7 +106,7 @@
 					<!--PHOTO-CONTAINER 6-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src=".\Images\Thumb\thumbnail_7.png" alt="Sorry, image could not be displayed.">
+							<img src=".\Images\Thumb\thumbnail_7.png" onclick="openModal();currentSlide(6)" alt="Sorry, image could not be displayed.">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Here are several different examples of Italian armor styles in the 16th century.</p>
@@ -114,7 +118,7 @@
 					<!--PHOTO-CONTAINER 7-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src=".\Images\Thumb\thumbnail_8.png" alt="Sorry, image could not be displayed.">
+							<img src=".\Images\Thumb\thumbnail_8.png" onclick="openModal();currentSlide(7)" alt="Sorry, image could not be displayed.">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Here are the armor styles of Italian pikemen from the 17th century.</p>
@@ -126,7 +130,7 @@
 					<!--PHOTO-CONTAINER 8-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src=".\Images\Thumb\thumbnail_9.png" alt="Sorry, image could not be displayed.">
+							<img src=".\Images\Thumb\thumbnail_9.png" onclick="openModal();currentSlide(8)" alt="Sorry, image could not be displayed.">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Here is an 18th century Austrian Heavy Cavalryman.</p>
@@ -138,7 +142,7 @@
 					<!--PHOTO-CONTAINER 9-->
 					<div class="photo-container">
 						<div class="photo">
-							<img src=".\Images\Thumb\thumbnail_10.png" alt="Sorry, image could not be displayed.">
+							<img src=".\Images\Thumb\thumbnail_10.png" onclick="openModal();currentSlide(9)" alt="Sorry, image could not be displayed.">
 							<div class="photo-overlay">
 								<h3 class="white-head">Click to Enlarge</h3>
 								<p>Pictured here are France's famous Cuirassiers and their armor style from the 19th century.</p>
@@ -160,8 +164,102 @@
 					<!--END VIDEO-CONTAINER-->
 				</div>
 			</div>
+
+			<!-- The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+			
+					<div class="mySlides">
+						<div class="numbertext">1 / 9</div>
+						<img src="./Images/Thumb/thumbnail_2.png" style="width:100%">
+					</div>
+			
+					<div class="mySlides">
+						<div class="numbertext">2 / 9</div>
+						<img src="./Images/Thumb/thumbnail_3.png" style="width:100%">
+					</div>
+			
+					<div class="mySlides">
+						<div class="numbertext">3 / 9</div>
+						<img src="./Images/Thumb/thumbnail_4.png" style="width:100%">
+					</div>
+			
+					<div class="mySlides">
+						<div class="numbertext">4 / 9</div>
+						<img src="./Images/Thumb/thumbnail_5.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">5 / 9</div>
+						<img src="./Images/Thumb/thumbnail_6.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">6 / 9</div>
+						<img src="./Images/Thumb/thumbnail_7.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">7 / 9</div>
+						<img src="./Images/Thumb/thumbnail_8.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">8 / 9</div>
+						<img src="./Images/Thumb/thumbnail_9.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">9 / 9</div>
+						<img src="./Images/Thumb/thumbnail_10.png" style="width:100%">
+					</div>
+			
+					<!-- Next/previous controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+					<!-- Thumbnail image controls -->
+					<div class="column">
+						<img class="demo" src="./Images/Thumb/thumbnail_2.png" onclick="currentSlide(1)" alt="">
+					</div>
+			
+					<div class="column">
+						<img class="demo" src="./Images/Thumb/thumbnail_3.png" onclick="currentSlide(2)" alt="">
+					</div>
+			
+					<div class="column">
+						<img class="demo" src="./Images/Thumb/thumbnail_4.png" onclick="currentSlide(3)" alt="">
+					</div>
+			
+					<div class="column">
+						<img class="demo" src="./Images/Thumb/thumbnail_5.png" onclick="currentSlide(4)" alt="">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="./Images/Thumb/thumbnail_6.png" onclick="currentSlide(5)" alt="">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="./Images/Thumb/thumbnail_7.png" onclick="currentSlide(6)" alt="">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="./Images/Thumb/thumbnail_8.png" onclick="currentSlide(7)" alt="">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="./Images/Thumb/thumbnail_9.png" onclick="currentSlide(8)" alt="">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="./Images/Thumb/thumbnail_10.png" onclick="currentSlide(9)" alt="">
+					</div>
+				</div>
+			</div>
 		</section>
-			<!--END GALLERY-->
+		<!--END GALLERY-->
+
 			
 		<!--CONTACT-->
 		<section id="contact">
