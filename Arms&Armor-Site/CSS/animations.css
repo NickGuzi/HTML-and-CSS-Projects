@@ -109,7 +109,7 @@
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 90%;
+    width: 50%;
     max-width: 1200px;
 }
 
@@ -132,7 +132,14 @@
 
 /* Hide the slides by default */
 .mySlides {
+    height: 50% !important;
+    width: 50% !important;
     display: none;
+}
+
+.mySlides img {
+    height: 50% !important;
+    width: 50% !important;
 }
 
 /* Next & previous buttons */
