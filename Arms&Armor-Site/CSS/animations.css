@@ -117,7 +117,7 @@
 .close {
     color: white;
     position: absolute;
-    top: 10px;
+    top: 41px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
@@ -130,7 +130,7 @@
     cursor: pointer;
 }
 
-/* Hide the slides by default */
+/* Hide the slides by default 
 .mySlides {
     height: 50% !important;
     width: 50% !important;
@@ -141,6 +141,7 @@
     height: 50% !important;
     width: 50% !important;
 }
+*/
 
 /* Next & previous buttons */
 .prev,
