@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<body>
+    <p id="XML_Example"></p>
+    <script>
+        var XML_Parser, XML_document;
+
+        //Creates text string
+        var Hockey_Stick = "<hockey_stick>" +
+            "<brand>Bauer</brand>" +
+            "<flex>100</flex>" +
+            "<size>Senior</size>" +
+            "<curve>P92</curve>" +
+            "</hockey_stick>";
+
+        //creates an XML DOM parser
+        XML_Parser = new DOMParser();
+
+        //creates a new XML DOM object using the text string
+        XML_document = XML_Parser.parseFromString(Hockey_Stick, "text/xml");
+
+        document.getElementById("XML_Example").innerHTML =
+            XML_document.getElementsByTagName("brand")[0].childNodes[0].nodeValue;
+    </script>
+
+</body>
+
+</html>
