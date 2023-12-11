@@ -17,4 +17,4 @@ This page is an example home page for a wine importer that is styled using Boots
 This folder contains basic practice files utilizing JavaScript in conjunction with HTML. 
 
 ### Basic HTML and CSS
-This folder contains basic practice files utilizing CSSin conjunction with CSS.  
+This folder contains basic practice files utilizing CSS in conjunction with CSS.  
